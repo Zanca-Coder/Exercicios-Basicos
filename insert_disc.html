@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Cadastrar Disciplina</title>
+</head>
+
+<body style="background-color: lightgray">
+    <h3 style="margin-left: 5px; margin-top: 5px;">Cadastrar Disciplina</h3>
+    <br>
+    <div style="margin-left: 40px; background-color: white; border-radius: 5px; margin-top: 0px; margin-right: 40px; padding-left: 12px;">
+        <div class="mb-6" style="padding-top: 10px;">
+            <h3>Inserção de nova disciplina</h3>
+        </div>
+        <form>
+            <div class="row">
+                <div class="col-md-2 mb-4">
+                    <div class="class=mb-3">
+                        <label class="form-label" for="txtSigla">Sigla:</label>
+                        <input class="form-control" type="txt" name="txtSigla" id="txtSigla" placeholder="MB000" />
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="class=mb-3">
+                        <label class="form-label" for="txtNomeDisc">Nome da Disciplina:</label>
+                        <input class="form-control" type="txt" name="txtNomeDisc" id="txtNomeDisc" placeholder="NOVA DISCIPLINA" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="class=mb-3">
+                            <p style="margin-bottom: 0px;">Idioma</p>
+                            <select class="form-select">
+                                    <option value="1">Inglês</option>
+                                    <option value="2">Poruguês</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <p style="margin-bottom: 0px;">Natureza:</p>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" name="radioObrigatoria" id="radioObrigatoria" />
+                            <label class="form-check-label" for="radioObrigatoria">Obrigatória</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" name="radioOptativa" id="radioOptativa" />
+                            <label class="form-check-label" for="radioOptativa">Optativa</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <p style="margin-bottom: 0px;">Regime:</p>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioAnual" id="radioAnual" />
+                        <label class="form-check-label" for="radioAnual">Anual</label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioSemestral" id="radioSemestral" />
+                        <label class="form-check-label" for="radioSemestral">Semestral</label>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <p style="margin-bottom: 0px;">Modalidade:</p>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioPresencial" id="radioPresencial" />
+                        <label class="form-check-label" for="radioPresencial">Presencial</label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioParcialEAD" id="radioParcialEAD" />
+                        <label class="form-check-label" for="radioParcialEAD">Parcialmente EAD</label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="radioTotalEAd" id="radioTotalEAD" />
+                        <label class="form-check-label" for="radioTotalEAD">Totalmente EAD</label>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div row="row">
+                        <label>Tipo de Oferta:</label>
+                    </div>
+                    <div class="form check form-check-inline">
+                        <input type="checkbox" id="chkboxTrabalho" name="chkboxTrabalho">
+                        <label for="chkboxTrabalho">Trabalho de Conclusão e Curso</label>
+                        <div class="form check form-check-inline">
+                            <input type="checkbox" id="chkboxEstagio" name="chkboxEstagio">
+                            <label for="chkboxEstagio">Estágio</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-11 mb-4">
+                    <div class="row">
+                        <div class="class=mb-3">
+                            <select class="form-select">
+                                <option selected disabled value="">Pré-requisitos:</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="class=mb-3">
+                            <select class="form-select">
+                                <option selected disabled value="">Co-requisitos:</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+        </form>
+        </div>
+</body>
+
+<script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js "></script>
+
+</html>
