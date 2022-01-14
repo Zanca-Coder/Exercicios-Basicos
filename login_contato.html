@@ -12,45 +12,136 @@
 <body style="background-color: lightgray">
     <form>
         <div>
-            <div style="margin-left: 40px; background-color: white; border-radius: 5px; margin-top: 40px; margin-right: 40px; padding-left: 12px; padding-bottom: 20px; padding-top: 15px;">
-                <div class="col-md-2 mb-4 ">
-                    <h4>Dados de Login</h4>
-                    <div>
-                        <label class="form-label " for="txtCpf ">CPF:</label>
-                        <input type="text " name="txtCpf " id="txtCpf " class="form-control cpf-mask " placeholder="___.____.____-__ " />
+            <div style="margin-left: 40px; background-color: white; border-radius: 10px; margin-top: 10px; margin-right: 40px; padding-left: 0px; padding-bottom: 20px; padding-top: 0px;">
+                <h4 style=" background-color: rgb(197, 194, 194); padding-top: 15px; padding-left: 10px; padding-bottom: 10px; ">Dados de Login</h4>
+                <div style="margin-left: 10px;">
+                    <div class="col-md-3 mb-3 ">
+                        <div>
+                            <label class="form-label " for="txtCpf ">CPF:</label>
+                            <input type="text " name="txtCpf " id="txtCpf " class="form-control cpf-mask " placeholder="___.____.____-__ " />
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-3 mb-3">
+                            <div>
+                                <label class="form-label " for="txtEmail ">Email:</label>
+                                <input type="text " name="txtEmail " id="txtEmail " class="form-control " />
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <div>
+                                <label class="form-label " for="txtConfirmaEmail ">Confirmar:</label>
+                                <input type="text " name="txtConfirmaEmail " id="txtConfirmaEmail " class="form-control " />
+                            </div>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label for="txtSenha " class="form-label ">Senha</label>
+                            <input type="password " class="form-control " id="txtSenha ">
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <label for="txtConfirmaSenha " class="form-label ">Confirmar</label>
+                            <input type="password " class="form-control " id="txtConfirmaSenha ">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </form>
+    <form>
+        <div style="margin-left: 40px; background-color: white; border-radius: 10px; margin-top: 10px; margin-right: 40px; padding-left: 0px; padding-bottom: 20px; padding-top: 0px; ">
+            <h4 style="background-color: rgb(197, 194, 194); padding-top: 15px; padding-left: 10px; padding-bottom: 10px; ">Dados de Contato</h4>
+            <div style="margin-left: 10px;">
+                <div class="row ">
+                    <div class="col-md-5 mb-3 ">
+                        <label class="form-label " for="txtNome ">Nome:</label>
+                        <input type="text " name="txtNone " id="txtNone " class="form-control " maxlength="20 " />
+                    </div>
+                    <div class="col-md-5 mb-3 ">
+                        <label class="form-label " for="txtSobrenome ">Sobrenome:</label>
+                        <input type="text " name="txtSobrenome " id="txtSobrenome " class="form-control " maxlength="20 " />
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-3 mb-3 ">
+                        <label class="form-label " for="txtDataNasc ">Nascimento:</label>
+                        <input type="text " name="txtDataNasc " id="txtDataNasc " class="form-control" />
+                    </div>
+                    <div class="col-md-4 mb-3 ">
                         <div>
-                            <label class="form-label " for="txtEmail ">Email:</label>
-                            <input type="text " name="txtEmail " id="txtEmail " class="form-control " />
+                            <label class="form-label " for="txtRG ">RG:</label>
+                            <input type="text " name="txtRG" id="txtRG" class="form-control " />
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-4 mb-3 ">
                         <div>
-                            <label class="form-label " for="txtConfirmaEmail ">Confirmar:</label>
-                            <input type="text " name="txtConfirmaEmail " id="txtConfirmaEmail " class="form-control " />
+                            <label class="form-label " for="txtSex ">Sexo:</label>
+                            <select class="form-select">
+                                <option value="1">Masculino</option>
+                                <option value="2">Feminino</option>
+                                <option value="3">Outro</option>
+                            </select>
                         </div>
-                    </div>
-                    <div class="col-md-1">
-                        <label for="txtSenha" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="txtSenha">
-                    </div>
-                    <div class="col-md-1">
-                        <label for="txtConfirmaSenha" class="form-label">Confirmar</label>
-                        <input type="password" class="form-control" id="txtConfirmaSenha">
                     </div>
                 </div>
-                <div style="margin-left: 40px; background-color: white; border-radius: 5px; margin-top: 40px; margin-right: 40px; padding-left: 12px; padding-bottom: 20px; padding-top: 15px;">
+                <div class="row">
+                    <div class="col-md-3 mb-3 ">
+                        <label class="form-label " for="txtCEP">CEP:</label>
+                        <input type="text " name="txtCEP" id="txtCEP" class="form-control" />
+                    </div>
+                    <div class="col-md-5 mb-3">
+                        <label class="form-label " for="txtEnd">Endereço:</label>
+                        <input type="text " name="txtEnd" id="txtEnd" class="form-control" />
+                    </div>
+                    <div class="col-md-1 mb-3 ">
+                        <label class="form-label " for="txtN">Nº:</label>
+                        <input type="text " name="txtN" id="txtN" class="form-control" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label " for="txtBairro">Bairro:</label>
+                        <input type="text " name="txtBairro" id="txtBairro" class="form-control" />
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label " for="txtComplemento">Complemento:</label>
+                        <input type="text " name="txtComplemento" id="txtComplemento" class="form-control" />
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label " for="txtCid">Cidade:</label>
+                        <input type="text " name="txtCid" id="txtCid" class="form-control" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label " for="txtEst">Estado:</label>
+                        <select class="form-select">
+                            <option value="" selected disabled>Selecione o estado:</option>
+                            <option value="1">SP</option>
+                            <option value="2">RJ</option>
+                            <option value="3">AM</option>
+                            <option value="4">BH</option>
+                            <option value="5">ES</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label " for="txtTel">DDD+Telefone:</label>
+                        <input type="text " name="txtTel" id="txtTel" class="form-control" />
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label " for="txtCel">DDD+Celular:</label>
+                        <input type="text " name="txtCel" id="txtCel" class="form-control" />
+                    </div>
+                </div>
 
-                </div>
             </div>
-        </div>
         </div>
     </form>
 </body>
 
 <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js "></script>
+<script>
+</script>
 
 </html>
